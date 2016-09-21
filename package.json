@@ -2,13 +2,15 @@
   "name": "imdb-clone",
   "version": "1.0.0",
   "description": "movie database",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
   },
   "author": "Phil and Kenty",
   "license": "MIT",
   "dependencies": {
-    "express": "^4.14.0"
+    "express": "^4.14.0",
+    "morgan": "^1.7.0"
   }
 }
