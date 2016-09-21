@@ -8,10 +8,11 @@ body {
 #wrap {
   min-height: 100%;
   height: auto;
+  background-color: black;
   /* Negative indent footer by its height */
-  margin: 0 auto -60px;
+  /*margin: 0 auto -60px;*/
   /* Pad bottom by footer height */
-  padding: 0 0 60px;
+  /*padding: 0 0 60px;*/
 }
 
 /* Set the fixed height of the footer here */
@@ -40,13 +41,25 @@ body {
 code {
   font-size: 80%;
 }
+.navbar-inverse {
+  background-color: white;
+}
+.poster:hover{
+  opacity: 0.5;
+  filter: alpha(opacity=100); /* For IE8 and earlier */
+}
+
+.moviesView {
+  color: white;
+}
 
 .poster{
-  display: inline;
+
+  display: inline-block;
   height: 22em;
   width: auto;
-  padding-right: 1em;
-  padding-bottom: 2em;
+  /*padding-right: 1em;*/
+  /*padding-bottom: 2em;*/
 }
 .sepPoster{
   display: inline;
