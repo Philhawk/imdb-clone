@@ -1,0 +1,22 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+  <div class="page-header">
+    <!-- <h1>Welcome to IMDB2</h1> -->
+    <!-- <img src="https://pbs.twimg.com/profile_images/2450268678/olxp11gnt09no2y2wpsh_normal.jpeg"><br> -->
+  </div>
+  <div class="row">
+    <div class="col-md-6">
+      {% for movie in movies %}
+        <h2>{{movie.Title}}</h2>
+        <h3>Year: {{movie.Year}}</h3>
+        <h3>Runtime: {{movie.Runtime}}</h3>
+        <h3>Plot: {{movie.Plot}}</h3>
+    </div>
+    <div class="col-md-6">
+      <img class="sepPoster" src={{movie.Poster}}>
+    </div>
+    {% endfor %}
+  </div>
+{% endblock %}
